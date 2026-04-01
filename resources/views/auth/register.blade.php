@@ -133,13 +133,13 @@
 
         <div class="field">
             <label>👤 Nom complet</label>
-            <input type="text" name="name" value="{{ old('name') }}" placeholder="Jean Dupont" required autofocus>
+            <input type="text" name="name" value="{{ old('name') }}" placeholder="divine kengni" required autofocus>
             @error('name') <div class="error">⚠️ {{ $message }}</div> @enderror
         </div>
 
         <div class="field">
             <label>📧 Adresse email</label>
-            <input type="email" name="email" value="{{ old('email') }}" placeholder="toi@exemple.com" required>
+            <input type="email" name="email" value="{{ old('email') }}" placeholder="divine@gmail.com" required>
             @error('email') <div class="error">⚠️ {{ $message }}</div> @enderror
         </div>
 
