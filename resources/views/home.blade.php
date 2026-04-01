@@ -10,7 +10,7 @@
 
     .hero {
         min-height: 100vh;
-        background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), 
+        background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), 
                     url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat;
         display: flex;
         align-items: center;
@@ -20,56 +20,56 @@
     }
 
     .hero-content {
-        max-width: 800px;
+        max-width: 820px;
         padding: 2rem;
     }
 
     .hero h1 {
         font-family: 'Playfair Display', serif;
-        font-size: 4.2rem;
+        font-size: 4.5rem;
         font-weight: 900;
-        line-height: 1.1;
-        margin-bottom: 1.2rem;
-        text-shadow: 0 4px 20px rgba(0,0,0,0.7);
+        line-height: 1.05;
+        margin-bottom: 1rem;
+        text-shadow: 0 5px 25px rgba(0,0,0,0.7);
     }
 
     .hero p {
-        font-size: 1.35rem;
+        font-size: 1.4rem;
         margin-bottom: 3rem;
-        opacity: 0.95;
+        opacity: 0.92;
     }
 
     .btn-start {
         background: linear-gradient(135deg, #e8903a, #d4691e);
         color: white;
-        padding: 1.2rem 3.5rem;
-        font-size: 1.3rem;
+        padding: 1.25rem 3.8rem;
+        font-size: 1.35rem;
         font-weight: 600;
-        border-radius: 9999px;
+        border-radius: 50px;
         text-decoration: none;
         display: inline-block;
-        box-shadow: 0 10px 35px rgba(212, 105, 30, 0.45);
+        box-shadow: 0 12px 35px rgba(212, 105, 30, 0.5);
         transition: all 0.3s ease;
     }
 
     .btn-start:hover {
-        transform: translateY(-6px) scale(1.05);
-        box-shadow: 0 15px 45px rgba(212, 105, 30, 0.55);
+        transform: translateY(-8px) scale(1.06);
+        box-shadow: 0 18px 50px rgba(212, 105, 30, 0.6);
     }
 </style>
 
 <div class="hero">
     <div class="hero-content">
         <h1>Bienvenue chez <span style="color: #f5c16c;">Divine Shop</span></h1>
-        <p>Des produits stylés et de qualité pour les développeurs et passionnés</p>
+        <p>Des produits de qualité pour les passionnés de développement et de style</p>
         
-        <!-- Bouton corrigé et simplifié -->
-        <a href="{{ url('/register') }}" class="btn-start">
+        <!-- Lien forcé vers Register -->
+        <a href="/register" class="btn-start">
             Commencer mes achats →
         </a>
 
-        <p style="margin-top: 3.5rem; font-size: 1.05rem; opacity: 0.85;">
-            Inscription gratuite • Large choix • Paiement sécurisé
+        <p style="margin-top: 4rem; font-size: 1.1rem; opacity: 0.85;">
+            Création de compte gratuite • Large sélection • Paiement sécurisé
         </p>
     </div>
 </div>
