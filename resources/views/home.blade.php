@@ -80,9 +80,9 @@
         <h1>Bienvenue chez <span style="color: #f5c16c;">Divine Shop</span></h1>
         <p>Des produits de qualité pour les passionnés de développement et de style</p>
         
-        <a href="{{ route('register') }}" class="btn-start">
-            Commencer mes achats →
-        </a>
+            <a href="/register" class="btn-start">
+                Commencer mes achats →
+            </a>
         
         <p style="margin-top: 3rem; font-size: 1rem; opacity: 0.8;">
             Inscription gratuite • Livraison rapide • Paiement sécurisé
