@@ -12,7 +12,11 @@ class ProductController extends Controller
      */
     public function index(): View
     {
-        $products = Product::all();   // On récupère tous les produits
+        // $products = Product::all();   // On récupère tous les produits
+
+        // return view('products.index', compact('products'));
+
+        $products=Product::all();
 
         return view('products.index', compact('products'));
     }
@@ -20,9 +24,16 @@ class ProductController extends Controller
     /**
      * Afficher les détails d'un seul produit
      */
+    // public function show(Product $product): View
+    // {
+    //     return view('products.show', compact('product'));
+    // }
+
     public function show(Product $product): View
+     
     {
         return view('products.show', compact('product'));
+
     }
 
     

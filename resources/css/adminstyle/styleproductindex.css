@@ -1,0 +1,139 @@
+/* ===== GLOBAL ===== */
+body {
+    background: #f4f6f9;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ===== CONTAINER CARD ===== */
+.bg-white {
+    border-radius: 18px !important;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06) !important;
+    overflow: hidden;
+}
+
+/* ===== HEADER TITLE ===== */
+h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+/* ===== BUTTON ADD PRODUCT ===== */
+a.bg-green-600 {
+    background: linear-gradient(135deg, #22c55e, #16a34a) !important;
+    border-radius: 10px !important;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+a.bg-green-600:hover {
+    transform: translateY(-2px);
+    opacity: 0.95;
+}
+
+/* ===== TABLE ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* HEADER */
+thead {
+    background: #f9fafb;
+}
+
+th {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: #6b7280;
+    padding: 14px;
+    text-align: left;
+}
+
+/* ROWS */
+td {
+    padding: 16px 14px;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 14px;
+}
+
+/* HOVER ROW */
+tbody tr {
+    transition: all 0.2s ease;
+}
+
+tbody tr:hover {
+    background: #f9fafb;
+    transform: scale(1.002);
+}
+
+/* ===== IMAGE ===== */
+img {
+    border-radius: 10px !important;
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* IMAGE PLACEHOLDER */
+.bg-gray-200 {
+    border-radius: 10px !important;
+}
+
+/* ===== PRODUCT NAME ===== */
+.font-medium {
+    font-weight: 600 !important;
+    color: #111827;
+}
+
+/* DESCRIPTION */
+.text-gray-500 {
+    font-size: 13px;
+}
+
+/* ===== PRICE ===== */
+td.font-semibold {
+    color: #10b981;
+    font-weight: bold;
+}
+
+/* ===== STOCK ===== */
+.text-green-600 {
+    color: #16a34a !important;
+    font-weight: 600;
+}
+
+.text-red-600 {
+    color: #dc2626 !important;
+    font-weight: 600;
+}
+
+/* ===== ACTIONS ===== */
+a.text-blue-600 {
+    color: #2563eb !important;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+a.text-blue-600:hover {
+    color: #1d4ed8 !important;
+}
+
+/* DELETE BUTTON */
+button.text-red-600 {
+    color: #dc2626 !important;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+button.text-red-600:hover {
+    color: #b91c1c !important;
+}
+
+/* ===== SPACING ===== */
+.space-x-3 > * + * {
+    margin-left: 12px !important;
+}

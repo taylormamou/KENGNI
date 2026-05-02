@@ -1,0 +1,108 @@
+/* ===== GLOBAL ===== */
+body {
+    background: #f4f6f9;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ===== CARTES (cards blanches) ===== */
+.bg-white {
+    border-radius: 16px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+    transition: all 0.3s ease;
+}
+
+.bg-white:hover {
+    transform: translateY(-2px);
+}
+
+/* ===== TITRES ===== */
+h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #374151;
+}
+
+/* ===== INPUT SELECT ===== */
+select {
+    border-radius: 12px !important;
+    border: 1px solid #e5e7eb !important;
+    padding: 12px !important;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+select:focus {
+    border-color: #6366f1 !important;
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+    outline: none;
+}
+
+/* ===== BUTTON ===== */
+button {
+    background: linear-gradient(135deg, #6366f1, #4f46e5) !important;
+    border-radius: 12px !important;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    opacity: 0.95;
+}
+
+/* ===== PRODUIT ITEM ===== */
+.flex.gap-6 {
+    transition: 0.2s;
+}
+
+.flex.gap-6:hover {
+    background: #f9fafb;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+/* ===== IMAGE PRODUIT ===== */
+.w-20.h-20 {
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+
+/* ===== PRIX ===== */
+.text-green-600 {
+    color: #10b981 !important;
+    font-weight: bold;
+}
+
+/* ===== TOTAL ===== */
+.text-xl {
+    font-size: 20px !important;
+}
+
+/* ===== LIENS ===== */
+a.text-gray-500 {
+    transition: 0.2s;
+}
+
+a.text-gray-500:hover {
+    color: #111827 !important;
+}
+
+/* ===== GRID SPACING ===== */
+.grid {
+    gap: 24px !important;
+}
+
+/* ===== BORDURES ===== */
+.border-t {
+    border-top: 1px solid #f1f1f1 !important;
+}
+
+.border-b {
+    border-bottom: 1px solid #f1f1f1 !important;
+}

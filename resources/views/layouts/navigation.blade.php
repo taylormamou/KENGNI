@@ -37,7 +37,18 @@
                         <x-dropdown-link :href="route('profile.edit')">
                             {{ __('Profile') }}
                         </x-dropdown-link>
-
+                        @if(auth()->user()->is_admin)
+                        <div class="border-t border-gray-200 my-2"></div>
+                        <x-dropdown-link :href="route('admin.dashboard')">
+                            👑 Espace Administrateur
+                        </x-dropdown-link>
+                    @endif
+                    <x-dropdown-link :href="route('orders.history')">
+                        📋 Mes Commandes
+                    </x-dropdown-link>
+                    <x-dropdown-link :href="route('products.index')">
+                            🛍️ Catalogue
+                        </x-dropdown-link>
                         <!-- Authentication -->
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf

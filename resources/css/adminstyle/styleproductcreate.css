@@ -1,0 +1,124 @@
+/* ===== GLOBAL ===== */
+body {
+    background: #f4f6f9;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ===== CARD ===== */
+.bg-white {
+    border-radius: 18px !important;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06) !important;
+    transition: 0.3s;
+}
+
+.bg-white:hover {
+    transform: translateY(-2px);
+}
+
+/* ===== TITRE ===== */
+h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+/* ===== LABEL ===== */
+label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #374151;
+}
+
+/* ===== INPUT / TEXTAREA ===== */
+input,
+textarea {
+    border-radius: 12px !important;
+    border: 1px solid #e5e7eb !important;
+    padding: 12px !important;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    background: #ffffff;
+}
+
+/* FOCUS */
+input:focus,
+textarea:focus {
+    border-color: #6366f1 !important;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+    outline: none;
+}
+
+/* ===== GRID SPACING ===== */
+.grid {
+    gap: 20px !important;
+}
+
+/* ===== FILE INPUT ===== */
+input[type="file"] {
+    background: #f9fafb;
+    cursor: pointer;
+}
+
+/* ===== TEXT INFO ===== */
+.text-gray-500 {
+    font-size: 12px;
+}
+
+/* ===== ERROR ===== */
+.text-red-500 {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* ===== BUTTON PRIMARY ===== */
+button.bg-green-600 {
+    background: linear-gradient(135deg, #22c55e, #16a34a) !important;
+    border-radius: 12px !important;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+button.bg-green-600:hover {
+    transform: translateY(-2px);
+    opacity: 0.95;
+}
+
+/* ===== BUTTON CANCEL ===== */
+a.bg-gray-300 {
+    border-radius: 12px !important;
+    transition: 0.3s;
+}
+
+a.bg-gray-300:hover {
+    transform: translateY(-2px);
+}
+
+/* ===== FORM SPACING ===== */
+.mb-6 {
+    margin-bottom: 20px !important;
+}
+
+.mb-8 {
+    margin-bottom: 28px !important;
+}
+
+/* ===== CONTAINER CENTER ===== */
+.max-w-3xl {
+    max-width: 700px !important;
+}
+
+/* ===== ANIMATION ===== */
+form {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
