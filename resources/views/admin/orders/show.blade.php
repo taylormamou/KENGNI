@@ -1,6 +1,6 @@
 <x-app-layout>
 @push('styles')
-    @vite('resources/css/adminstyle/ordershow.css')
+    @vite('resources/css/adminstyle/styleordershow.css')
 @endpush
     <x-slot name="header">
         <div class="flex justify-between items-center">

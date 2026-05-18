@@ -91,22 +91,35 @@
                 <div class="font-medium text-sm text-gray-500">{{ Auth::user()?->email ?? '' }}</div>
             </div>
 
-            <div class="mt-3 space-y-1">
-                <x-responsive-nav-link :href="route('profile.edit')">
-                    {{ __('Profile') }}
-                </x-responsive-nav-link>
+            <<div class="mt-3 space-y-1">
+    <x-responsive-nav-link :href="route('profile.edit')">
+        {{ __('Profile') }}
+    </x-responsive-nav-link>
 
-                <!-- Authentication -->
-                <form method="POST" action="{{ route('logout') }}">
-                    @csrf
+    @if(auth()->user()->is_admin)
+    <x-responsive-nav-link :href="route('admin.dashboard')">
+        👑 Espace Administrateur
+    </x-responsive-nav-link>
+    @endif
 
-                    <x-responsive-nav-link :href="route('logout')"
-                            onclick="event.preventDefault();
-                                        this.closest('form').submit();">
-                        {{ __('Log Out') }}
-                    </x-responsive-nav-link>
-                </form>
-            </div>
+    <x-responsive-nav-link :href="route('orders.history')">
+        📋 Mes Commandes
+    </x-responsive-nav-link>
+
+    <x-responsive-nav-link :href="route('products.index')">
+        🛍️ Catalogue
+    </x-responsive-nav-link>
+
+    <!-- Authentication -->
+    <form method="POST" action="{{ route('logout') }}">
+        @csrf
+        <x-responsive-nav-link :href="route('logout')"
+                onclick="event.preventDefault();
+                            this.closest('form').submit();">
+            {{ __('Log Out') }}
+        </x-responsive-nav-link>
+    </form>
+</div>
         </div>
     </div>
 </nav>
